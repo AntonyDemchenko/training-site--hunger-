@@ -12,6 +12,7 @@ $(document).ready(function($){
   		autoplay:true,
   		slidesToShow:1,
   		arrows:false,
+  		// appendDots: $('.specialties'),
 	});
 
 	$('.menu-slider').slick({
@@ -43,9 +44,17 @@ $(document).ready(function($){
 		$('.gallery-popup__slider').slick({
 			initialSlide:photoOrder,
 			dots:true,
+			// centerMode: true,
+			responsive: [
+			    {
+			      breakpoint: 1025, 
+			      settings: {
+			        arrows:false,
+			      }
+			    },
+			  ]
 		});
 	});
-
 
 	$(".gallery-popup__exit").click(function () {
 

@@ -30,6 +30,11 @@ button {
 	src: url(Banny-font/Banny-LightRound.ttf);
 	}
 
+/*.container {
+	margin: 0 auto;
+	max-width: 1200px; 	
+}*/
+
 .header {
 	width: 100%;
 	height: 758px;
@@ -39,13 +44,11 @@ button {
 	justify-content: flex-start;
 	background-image: url(img/header-bg.png) ;
 	background-position: center;
-	/*background-size: cover;*/
 	position: relative;
 }
 
 .header-menu {
 	display: flex;
-	/*justify-content: space-between;*/
 	justify-content: center;
 	width: 100%;
 }
@@ -54,7 +57,7 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 126px;
+	width: 9.4%;
 	height: 94px;
 	border: none;
 	outline: none;
@@ -65,6 +68,7 @@ button {
 	color: #FFFFFF;
 	text-transform: uppercase;
 	z-index: 2;
+	/*border: 1px solid red;*/
 }
 
 .header-menu__item:nth-child(4) {
@@ -80,7 +84,7 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 142px;
+	width: 10%;
 	height: 142px;
 	text-align: center;
 	top: 24px;
@@ -105,7 +109,7 @@ button {
 .schedule {
 	display: flex;
 	align-items: center;
-	margin: 0 0 0 77px ;
+	margin: 0 0 0 60px ;
 }
 
 .schedule__text{
@@ -288,8 +292,9 @@ button {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 550px;
+	width: 45.5%;
 	text-align: center;
+	/*border: 1px solid red;*/
 }
 
 .feature__title {
@@ -332,20 +337,20 @@ button {
 
 .feature-img {
 	display: flex;
-	height: 450px;
-	width: 570px;
+	height: 70.5%;
+	width: 45%;
 	position: relative;
 }
 
 .feature-img__img {
-	width: 450px;
-	height: 450px;
+	width: 83%;
+	height: 100%;
 	box-shadow: 0 0 40px 10px rgba(0,0,0,0.2);
 }
 
 .feature-img__square {
-	width: 237px;
-	height: 237px;
+	width: 42%;
+	height: 52%;
 	border: 19px solid #E8C300;
 	border-radius: 5px;
 	position: absolute;
@@ -369,7 +374,7 @@ button {
 	background-position: center;
 	background-size: cover;
 	color: white;
-
+	position: relative;
 }
 
 .section-title {
@@ -380,7 +385,6 @@ button {
 	height: 95px;
 	position: absolute;
 	top: 0;
-	margin-left: -70px;
 	z-index: 2;
 }
 
@@ -406,7 +410,7 @@ button {
 }
 
 .form-booking__input {
-	width: 263px;
+	width: 48%;
 	height: 57px;
 	font-size: 14px;
 	font-family: 'Open Sans', sans-serif;
@@ -441,7 +445,7 @@ button {
 	color: #FFFFFF;
 	background-color: #E8C300;
 	border: none;
-	width: 535px;
+	width: 98%;
 	height: 57px;
 	border-radius: 3px;
 	outline: none;
@@ -455,10 +459,13 @@ button {
 }
 
 .schedule_booking {
-	width: 100%;
-	margin-left: -70px;
-	position: absolute;
+	width: 60%;
+	/*margin-left: -70px;*/
+	margin: 0 auto;
+	position:relative;
 	bottom: 40px;
+	/*border: 1px solid red;*/
+	text-align: center;
 }
 
 .schedule_booking p{
@@ -468,11 +475,10 @@ button {
 	color: #999999;
 	line-height: 12px;
 	font-weight: normal;
-	margin: 0 auto;
-}
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 
-.schedule_booking p strong {
-	font-weight: bold;
 }
 
 .specialties {
@@ -481,6 +487,7 @@ button {
 	color: white;
 	padding: 0;
 	position: relative;
+	/*border: 1px solid green;*/
 }
 
 .specialties .section-title {
@@ -542,17 +549,22 @@ button {
 /* Точки (булиты) */
 .specialties-slider .slick-dots{
 	display: flex;
-	position: absolute;
-	left: 42.4%;
-	bottom: 25px;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+	bottom: 35px;
 	list-style: none;
+	z-index: 3000;
+	width: 100px;
+	padding: 0;
+
 }
-.specialties-slider .slick-dots li{
-	margin: 0 15px;
-}
+.specialties-slider .slick-dots li{}
 /* Активная точка */
 .specialties-slider .slick-dots li.slick-active button{
 	opacity: 1;
+
 }
 /* Элемент точки */
 .specialties-slider .slick-dots li button{
@@ -566,6 +578,7 @@ button {
 	outline: none;
 	background-color: white;
 	opacity: 0.5;
+
 }
 
 .menu {
@@ -752,6 +765,7 @@ button {
 	background-image: url(img/privat.png);
 	background-position: center;
 	background-size: cover;
+	position: relative;
 }
 
 .gallery {
@@ -761,17 +775,18 @@ button {
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .gallery__item {
-	height: 341px;
+	height: 100%;
 	width: 25%;
 	position: relative;
 }
 
 .gallery__photo {
-	height: 341px;
-	width: 341px;
+	height: 100%;;
+	width: 100%;;
 	cursor: pointer;
 	z-index: 1;
 }
@@ -849,10 +864,6 @@ button {
 	/*border: 1px solid red;*/
 }
 
-.gallery-popup__item img{
-	
-}
-
 .gallery-popup__photo {
 	width: 500px;
 	height: 500px;
@@ -878,15 +889,10 @@ button {
 	height: 100%;
 	width: 100%;
 	display: flex;
-	/*align-items: center;
-	justify-content: center;*/
-
 }
 /* Лента слайдов */
 .gallery-popup__slider .slick-track{
 	display: flex;
-	
-	/*border: 1px solid green;*/
 }
 /* Слайд */
 .gallery-popup__slider .slick-slide{	
@@ -913,20 +919,17 @@ button {
 	outline: none;
 	border: none;
 	background: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 /* Стрелка влево */
 .gallery-popup__slider .slick-arrow.slick-prev{
 	background-image: url(img/arrow-left.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 /* Стрелка вправо */
 .gallery-popup__slider .slick-arrow.slick-next{
 	background-image: url(img/arrow-right.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100%;
 }
 
 .gallery-popup__slider .slick-arrow:active {
@@ -964,8 +967,6 @@ button {
 	font-size: 0;
 	opacity: 0.5;
 }
-
-
 
 .contact {
 	display: flex;
@@ -1101,6 +1102,7 @@ button {
 }
 
 .container {
+	margin: 0 auto;
 	max-width: 1366px;
 }	
 
@@ -1124,6 +1126,173 @@ button {
 
 @media (max-width: 767px){
 	.container {
+		max-width: 500;
+	}
+}	
+
+@media (max-width: 482px){
+	.container {
 		max-width: none;
+	}
+
+	.feature {
+		width: 100%
+	}
+
+	.about {
+		display: flex;
+		align-items: center;
+		height: 400px
+	}
+
+	.team {
+		display: flex;
+		align-items: center;
+		height: 500px;
+	}
+
+	.form-booking__input {
+		width: 97%;
+	}
+
+	.schedule_booking {
+		width: 98%;
+		display: flex;
+	}
+
+	.section_info {
+		justify-content: center;
+		padding: 0;
+	}
+
+	.feature {
+		width: 95%
+	}
+
+	.feature-img {
+		display: none
+	}
+
+	.privat .section_info {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.privat .feature-img {
+		display: flex;
+		width: 200px;
+		height: 200px;
+		margin: 0;
+	}
+
+	.privat .feature-img .feature-img__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.privat .feature-img__square {
+		display: none;
+	}
+
+	.feature__title {
+		font-size: 30px ;
+	}
+
+	.feature__subtitle {
+		font-size: 15px ;
+	}
+
+	.feature__text {
+		font-size: 12px ;
+	}
+
+	.menu-slider-dots {
+		display: none;
+	}
+
+	.gallery {
+		width: 100%;
+	}
+
+	.gallery__item {
+		display: none;
+		visibility: hidden;
+	}
+
+	.gallery__item:nth-child(1) {
+		display: flex;
+		visibility: visible;
+		width: 100%
+	}
+
+	/*.gallery__watch {
+		display: none;
+	}
+*/
+	.gallery-popup {
+		width: 100vw;
+		height: 100vh;
+		
+	}
+
+	.gallery-popup__slider {
+		width: 100%;
+		top: 100px;
+		margin: 0;
+	}
+
+	.gallery-popup__item {
+
+		width: 100%;
+	}
+
+	.gallery-popup__slider .slick-slide {
+		width: 100%;
+		margin: 0 auto;
+		height: 300px;
+		/*border: 1px solid red;*/
+	}
+
+	.gallery-popup__photo {
+		width: 100%;
+	}
+
+	.gallery-popup__slider .slick-dots {
+		padding: 0;
+		margin: 0;
+	}
+
+	.contact {
+		height: 700px
+	}
+
+	.contact-form {
+		height: 480px;
+		justify-content: space-around;
+		margin-top: 0;
+		/*border: 1px solid red;*/
+	}
+
+	.contact-form__item {
+		width: 98%;
+	}
+
+	.contact-form__item_input {
+		height: 50px;
+	}
+
+	.contact-form__item_textarea {
+		width: 100%;
+	}
+
+	.contact-form__item_submit {
+		height: 50px;
+	}
+
+	.contact-info  {
+		flex-direction: column;
+		height: 100px;
+		order: +1;
+		/*border: 1px solid red;*/
 	}
 }	
