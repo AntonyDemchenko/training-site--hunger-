@@ -1,8 +1,12 @@
+* {
+	/*border: 1px solid red;*/
+}
+
 body {
 	max-width: 1366px;
 	margin: 0 auto;
 	padding: 0;
-	overflow-x: hidden;
+	margin: 0;
 }
 
 div {
@@ -45,6 +49,7 @@ button {
 	background-image: url(img/header-bg.png) ;
 	background-position: center;
 	position: relative;
+	overflow: hidden;
 }
 
 .header-menu {
@@ -460,12 +465,10 @@ button {
 
 .schedule_booking {
 	width: 60%;
-	/*margin-left: -70px;*/
 	margin: 0 auto;
 	position:relative;
 	bottom: 40px;
-	/*border: 1px solid red;*/
-	text-align: center;
+	justify-content: center;
 }
 
 .schedule_booking p{
@@ -798,8 +801,15 @@ button {
 	z-index: 30;
 	bottom: -3px;
 	position: absolute;
-	background-image: url(img/watch.png);
+	background-color: #000;
 	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery__img {
+	width: 40%;
 }
 
 .gallery__watch:hover {
@@ -814,6 +824,10 @@ button {
 	width: 350px;
 	z-index: 20;
 	bottom: -3px;
+}
+
+.gallery__text {
+	display: none;
 }
 
 .gallery-popup {
@@ -1163,6 +1177,7 @@ button {
 	.section_info {
 		justify-content: center;
 		padding: 0;
+		height: 550px;
 	}
 
 	.feature {
@@ -1171,6 +1186,10 @@ button {
 
 	.feature-img {
 		display: none
+	}
+
+	.privat {
+		/*height: 600px;*/
 	}
 
 	.privat .section_info {
@@ -1208,6 +1227,7 @@ button {
 
 	.menu-slider-dots {
 		display: none;
+
 	}
 
 	.gallery {
@@ -1225,14 +1245,33 @@ button {
 		width: 100%
 	}
 
-	/*.gallery__watch {
+	.gallery__watch {
+		opacity: 0.8;
+		width: 100%;
+	}
+
+	.gallery__img {
 		display: none;
 	}
-*/
+
+	.gallery__text {
+		display: flex;
+		flex-direction: column;
+		font-size: 10px;
+		font-family: 'Banny-Round', sans-serif;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		margin: 0;
+		text-align: center;
+	}
+
+	.gallery__text strong {
+		font-size: 30px;
+	}
+
 	.gallery-popup {
 		width: 100vw;
 		height: 100vh;
-		
 	}
 
 	.gallery-popup__slider {
@@ -1242,14 +1281,13 @@ button {
 	}
 
 	.gallery-popup__item {
-
 		width: 100%;
 	}
 
 	.gallery-popup__slider .slick-slide {
 		width: 100%;
 		margin: 0 auto;
-		height: 300px;
+		height: 250px;
 		/*border: 1px solid red;*/
 	}
 
@@ -1260,6 +1298,7 @@ button {
 	.gallery-popup__slider .slick-dots {
 		padding: 0;
 		margin: 0;
+		bottom: 90px;
 	}
 
 	.contact {
