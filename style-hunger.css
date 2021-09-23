@@ -56,6 +56,7 @@ button {
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	
 }
 
 .header-menu__item {
@@ -73,7 +74,7 @@ button {
 	color: #FFFFFF;
 	text-transform: uppercase;
 	z-index: 2;
-	/*border: 1px solid red;*/
+	
 }
 
 .header-menu__item:nth-child(4) {
@@ -102,6 +103,8 @@ button {
 	transition-timing-function: ease-out;
 }
 
+
+
 .header__center {
 	display: flex;
 	align-items: center;
@@ -109,12 +112,14 @@ button {
 	top: 214px;
 	width: 100%;
 	position: relative;
+	
 }
 
 .schedule {
 	display: flex;
 	align-items: center;
 	margin: 0 0 0 60px ;
+	
 }
 
 .schedule__text{
@@ -140,6 +145,7 @@ button {
 	position: absolute;
 	left: 50%;
 	margin-left: -400px;
+	
 }
 
 .main-title__subtitle {
@@ -299,7 +305,7 @@ button {
 	align-items: center;
 	width: 45.5%;
 	text-align: center;
-	/*border: 1px solid red;*/
+	/**/
 }
 
 .feature__title {
@@ -1154,6 +1160,112 @@ button {
 		max-width: none;
 	}
 
+	body.lock {
+		overflow: hidden;
+	}
+
+	.container {}
+	.header {
+		height: 650px;
+	}
+
+	.menu-burger {
+		width: 35px;
+		height: 35px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		z-index: 102;
+		margin: 10px 10px 0 auto;
+		overflow: auto;
+		position: absolute;
+		right: 10px;
+	}
+
+	.menu-burger span {
+		width: 100%;
+		height: 5px;
+		border-radius: 5px;
+		background-color: #FFD600;	
+	}
+
+	.active .menu-burger__line-1{
+		transform: rotate(45deg);
+		position: relative;
+		top: 11px;
+		transition: all 0.5s ease 0s;
+	}
+
+	.active .menu-burger__line-2{
+		transform: scale(0);
+		transition: all 0.1s ease 0s;
+	}
+
+	.active .menu-burger__line-3{
+		transform: rotate(-45deg);
+		position: relative;
+		bottom: 12px;
+		transition: all 0.5s ease 0s;
+	}
+	.header-menu {
+		flex-wrap: wrap;
+		background-color: black;
+		opacity: 0.9;
+		display: none;
+		z-index: 3;
+		height: 700px;
+	}
+
+	.active.header-menu  {
+		display: flex;
+	}
+	.header-menu__item:nth-child(4) {
+		margin-right: 0;
+	}
+	.header-menu__item {
+		/*display: none;*/
+		/*border: 1px solid red;*/
+		width: 150px;
+		margin: 0 5px 0 5px;
+	}
+
+	
+	.scrollto {}
+	.header__menu-img {
+		z-index: 1;
+	}
+	.header__center {
+		width: 100%;
+	}
+	.schedule {
+		position: relative;
+		top: 250px;
+	}
+	.schedule__text {
+		writing-mode: lr-tb;
+	}
+	.main-title {}
+	.main-title__subtitle {}
+	.main-title__main-tile {
+		font-size: 40px;
+	}
+	.main-title__line {}
+	.main-title-btns {}
+	.main-title-btns__book , 
+	.main-title-btns__explore {
+	width: 120px;
+	height: 50px;
+	}
+	.header-social {
+		display: none;
+	}
+	.header-social__item {}
+	.header-btn-scroll {
+		top: 500px;
+	}
+	.header-btn-scroll__inside {}
+
 	.feature {
 		width: 100%
 	}
@@ -1232,7 +1344,7 @@ button {
 	}
 
 	.menu {
-		height: 700px;
+		height: 800px;
 	}
 
 	.menu-slider {
@@ -1265,7 +1377,7 @@ button {
 	}
 
 	.menu-slider-dots .slick-dots{
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
@@ -1318,7 +1430,7 @@ button {
 
 	.gallery-popup {
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 	}
 
 	.gallery-popup__slider {

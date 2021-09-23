@@ -7,10 +7,21 @@ $(document).ready(function($){
 	return false;
 	});
 
+	$('.menu-burger').click(function(event){
+		$('.menu-burger, .header-menu').toggleClass('active');
+		$('body').toggleClass('lock');
+		$('.lang-menu').detach().appendTo('.menu');
+	});
+
+	$('.header-menu__item').click(function(event) {
+        $('.menu-burger, .header-menu').removeClass('active');
+        $('body').removeClass('lock');
+    });
+
 	$('.specialties-slider').slick({
 		dots:true,
-  		speed:1000,
-  		autoplay:true,
+  		// speed:1000,
+  		// autoplay:true,
   		slidesToShow:1,
   		arrows:false,
   		// appendDots: $('.specialties'),
