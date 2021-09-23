@@ -1,4 +1,5 @@
 $(document).ready(function($){
+
 	$("button.scrollto").click(function () {
 	elementClick = jQuery(this).attr("href")
 	destination = jQuery(elementClick).offset().top-0	;
@@ -24,13 +25,25 @@ $(document).ready(function($){
 	let columns = document.querySelectorAll('.menu-slider__column');
 	let menuItem = document.querySelector('.menu-slider__position');
 
-	for (let item of columns){
+	for (let j = 1; j < columns.length; j++) {
+		
 		let i = 1;
-		while (i < 7) {
-			item.append(menuItem.cloneNode(true));
+		if (j < 4 ){
+			i = 2
+		};
+		while (i < 8) {
+			columns[j].append(menuItem.cloneNode(true));
 			i++
 		};
-	}
+	};
+
+	// for (let item of columns){
+	// 	let i = 1;
+	// 	while (i < 7) {
+	// 		item.append(menuItem.cloneNode(true));
+	// 		i++
+	// 	};
+	// }
 
 	$(".gallery__watch").click(function () {
 

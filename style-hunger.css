@@ -502,6 +502,7 @@ button {
 	height: 100%;
 	padding: 0;
 	position: relative;
+	outline: none;
 	/*border: 1px solid red;*/
 }
 
@@ -599,6 +600,7 @@ button {
 	padding: 0;
 	position: relative;
 	display: flex;
+
 }
 
 .menu-slider .slider__item {}
@@ -610,7 +612,7 @@ button {
 .menu-slider.slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
 .menu-slider .slick-list {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	height: 100%;
 	width: 100%;
 }
@@ -629,6 +631,7 @@ button {
 	padding: 0 75px 0 75px;
 	display: flex;
 	justify-content: space-between;
+	/*border: 1px solid red;*/
 }
 /* Слайд активный (показывается) */
 .menu-slider.slick-slide.slick-active{}
@@ -652,6 +655,7 @@ button {
 	list-style: none;
 	margin: 50px 0;
 	padding: 0;
+
 }
 
 .menu-slider-dots .slick-dots li:last-child button  {
@@ -722,11 +726,12 @@ button {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	/*border: 1px solid red;*/
 }
 
 .menu-slider__position {
 	display: flex;
-	/*border: 1px solid red;*/
+	
 }
 
 .menu-slider__title  {
@@ -1167,6 +1172,7 @@ button {
 
 	.form-booking__input {
 		width: 97%;
+		height: 40px;
 	}
 
 	.schedule_booking {
@@ -1225,9 +1231,50 @@ button {
 		font-size: 12px ;
 	}
 
-	.menu-slider-dots {
-		display: none;
+	.menu {
+		height: 700px;
+	}
 
+	.menu-slider {
+		/*border: 1px solid blue;*/
+		overflow: scroll;
+	} 
+
+	.menu-slider .slick-slide {
+		padding: 470px 0 0 0;
+		margin-top: 0;
+		flex-direction: column;
+		overflow: scroll;
+		justify-content: center;
+		height: 400px;
+		/*margin-top: 100px;*/
+		
+	}
+
+	.menu-slider__column {
+		/*border: 1px solid red;*/
+		align-items: center;
+	}
+
+	.menu-slider__position {
+		margin-bottom: 10px;
+	}
+
+	.menu-slider__item {
+		
+	}
+
+	.menu-slider-dots .slick-dots{
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		/*border: 1px solid red;*/
+		justify-content: center;
+	}
+
+	.menu-slider-dots .slick-dots li button {
+		border-width: 0 1px 0 1px;
 	}
 
 	.gallery {
@@ -1271,7 +1318,7 @@ button {
 
 	.gallery-popup {
 		width: 100vw;
-		height: 100vh;
+		height: 90vh;
 	}
 
 	.gallery-popup__slider {
